@@ -30,3 +30,12 @@ Choisir parmi les APIs disponibles sur Internet une source de données à laquel
 
 ## **Démonstration**
 
+https://github.com/geraldinegautier/Projet-collectif-Dataviz/assets/158101084/b86b678c-a8dc-4e38-8822-db5a39bb7e44
+
+**Responsive**
+
+![Capture d'écran 2024-05-24 230809](https://github.com/geraldinegautier/Projet-collectif-Dataviz/assets/158101084/e715a54e-d6a4-4424-a6f7-4e6af4743021)
+![Capture d'écran 2024-05-24 230829](https://github.com/geraldinegautier/Projet-collectif-Dataviz/assets/158101084/9d3f115d-2b04-407e-bcce-453a6e6bb732)
+
+
+
