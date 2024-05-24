@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet API POKEDEX</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--lien pour les polices récupéré dans google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geostar+Fill&family=Viga&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="api.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <audio autoplay id="myAudio" src="pokemonEnding.mp3"></audio> <!--pour mettre de la musique sur le site -->
+
+    <div id="searchContainer">
+        <input type="text" id="searchInput" placeholder="Tape le nom du Pokémon que tu veux retrouver &#x1F50E;">
+        <button id="playPauseButton">Music</button>
+    </div>
+
+    <a href="api1.html">
+        <!-- Contenu de la carte Pokémon pour Bulbizarre -->
+    </a>
+
+    <div id="buttons">
+        <!-- Filtre affichage tous les Pokémon -->
+        <button class="button-value" id="buttonAll">All</button>
+        <!-- Filtre ordre alphabétique -->
+        <button class="button-value" id="buttonAZ">A-Z</button>
+        <button class="button-value" id="buttonZA">Z-A</button>
+        <label for="type-select"></label>
+
+        <!-- Filtre par type -->
+        <select name="types" id="types">
+            <option value="all">Types</option>
+            <option value="Poison">Poison</option>
+            <option value="Plante">Plante</option>
+            <option value="Feu">Feu</option>
+            <option value="Eau">Eau</option>
+            <option value="Insecte">Insecte</option>
+            <option value="Normal">Normal</option>
+            <option value="Vol">Vol</option>
+            <option value="Électrik">Électrik</option>
+            <option value="Sol">Sol</option>
+            <option value="Fée">Fée</option>
+            <option value="Combat">Combat</option>
+            <option value="Psy">Psy</option>
+            <option value="Roche">Roche</option>
+            <option value="Acier">Acier</option>
+            <option value="Glace">Glace</option>
+            <option value="Spectre">Spectre</option>
+        </select>
+        <button class="button-value" id="buttonDataViz">DataViz</button>
+    </div>
+
+    <div class="container" id="allPokemons"></div>
+    <button id="boutonNext">Charger d'autres Pokémons</button>
+    <div class="chart-container" id="chartContainer">
+        <canvas class="myChart" id="myChart"></canvas>
+    </div>
+
+    <div id="statsContainer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="api.js"></script>
+</body>
+
+</html>

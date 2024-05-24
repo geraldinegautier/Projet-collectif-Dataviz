@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+
+:root {
+    --color-feu: orange;
+    --color-plante: rgb(17, 173, 17);
+    --color-poison: rgb(189, 60, 189);
+    --color-vol: rgb(197, 189, 189);
+    --color-eau: rgb(59, 187, 219);
+    --color-insecte: rgb(13, 102, 13);
+    --color-normal: rgb(230, 224, 176);
+    --color-électrik: rgb(255, 251, 0);
+    --color-sol: rgb(228, 171, 97);
+    --color-fée: pink;
+    --color-combat: rgb(153, 67, 27);
+    --color-psy: rgb(236, 24, 155);
+    --color-roche: rgb(153, 106, 36);
+    --color-acier: rgb(124, 120, 120);
+    --color-glace: rgb(165, 230, 235);
+    --color-spectre: rgb(112, 16, 112);
+}
+
+/* type of pokemon*/
+
+.feu {
+    background-color: var(--color-feu);
+    /* border-radius: 30px; */
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.plante {
+    background-color: var(--color-plante);
+   /*  border-radius: 30px; */
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poison {
+    background-color: var(--color-poison);
+    /* border-radius: 30px; */
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.vol {
+    background-color: var(--color-vol);
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.eau {
+    background-color: var(--color-eau);
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.insecte {
+    background-color: var(--color-insecte);
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.normal {
+    background-color: var(--color-normal);
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.électrik {
+    background-color: var(--color-électrik);
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sol {
+    background-color: var(--color-sol);
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fée {
+    background-color: var(--color-fée);
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.combat {
+    background-color: var(--color-combat);
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.psy {
+    background-color: var(--color-psy);
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roche {
+    background-color: var(--color-roche);
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.acier {
+    background-color: var(--color-acier);
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.glace {
+    background-color: var(--color-glace);
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.spectre {
+    background-color: var(--color-spectre);
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@keyframes bougerNom {
+    0% {
+        transform: translateX(0); /* Position de départ */
+    }
+    50% {
+        transform: translateX(10px); /* Mouvement vers la droite */
+    }
+    100% {
+        transform: translateX(0); /* Retour à la position de départ */
+    }
+}
+
+@keyframes changeBackgroundColor {
+    0% {
+        background-color: rgb(209, 154, 109); /* Couleur de fond initiale */
+    }
+    50% {
+        background-color: rgb(160, 160, 226); /* Couleur de fond à mi-chemin de l'animation */
+    }
+    100% {
+        background-color: rgb(112, 216, 112); /* Couleur de fond finale */
+    }
+}
+
+h2 {
+    font-family: "Delius Unicase", cursive;
+    font-weight: 700;
+    font-style: normal;
+    border-radius: 10px;
+    animation: bougerNom 1s ease infinite, changeBackgroundColor 5s ease infinite alternate; /* Animation nommée "changeBackgroundColor" */
+}
+
+.pokemon {
+    border: 1px solid rgb(8, 8, 35);
+    padding: 25px;
+    background-position-x: 20px;
+    background-color: rgba(237, 236, 222, 0.971);
+}
+
+.pokemon img {
+    max-height: 200px;
+}
+
+.centered {
+    text-align: center;
+    font-family: "Delius Unicase", cursive;
+    font-weight: 700;
+    font-style: normal;
+    transition: transform 0.3s ease; /* Ajoute une transition douce au mouvement */
+}
+
+.centered:hover {
+    transform: translateY(-5px); /* Déplace le texte vers le haut de 5 pixels lorsque le curseur est dessus */
+}
+
+body {
+    background: #ffc600;
+    background: linear-gradient(to right, #D4D3DD, #3398aa);
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-size: cover; /* La taille de l'image est ajustée pour couvrir l'ensemble de l'élément conteneur */
+    background-position: center; /* L'image est centrée à l'intérieur de l'élément conteneur */
+}
+
+.img {
+    position:fixed;
+	vertical-align:bottom;
+    visibility:visible;
+}
+
+
+#statsContainer {
+    background-color: rgba(255, 255, 255, 0.5); /* Couleur de fond avec opacité */
+    padding: 10px; /* Ajouter un espace intérieur */
+    border-radius: 10px; /* Arrondir les coins */
+}
+
+#statsContainer p {
+    margin: 5px 0; /* Ajouter un espace entre les paragraphes */
+}

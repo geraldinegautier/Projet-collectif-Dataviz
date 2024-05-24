@@ -1,0 +1,385 @@
+body {
+    width: 100%;
+    background: #ffc600;
+    background: linear-gradient(to right, #D4D3DD, #774b80);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-image: url("1274987.png");
+    background-size: cover;
+    background-attachment: fixed;
+    /* Fixer l'image de fond */
+    background-position: center;
+    /* Centrer l'image horizontalement et verticalement */
+}
+
+#searchContainer {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 1em 0;
+}
+
+#searchInput {
+    flex: 1;
+    border-radius: 30px;
+    padding: 1em;
+    height: 50px;
+    /* Définir une hauteur fixe */
+    background: linear-gradient(to right, #cc00ff, #cc50ff, #cc90ff, #6060cf, #ff00ff, #a83232);
+    background-size: 200% auto;
+    animation: gradientAnimation 5s ease infinite;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    box-sizing: border-box;
+    /* Assure que le padding est inclus dans la hauteur totale */
+}
+
+#searchInput::placeholder {
+    font-family: "Viga", sans-serif;
+    color: black;
+}
+
+#playPauseButton {
+    border-radius: 30px;
+    margin-left: 1em;
+    padding: 1em;
+    height: 50px;
+    /* Assure la même hauteur que l'input */
+    display: flex;
+    align-items: center;
+    font-family: "Viga", sans-serif;
+    cursor: pointer;
+    box-sizing: border-box;
+    /* Assure que le padding est inclus dans la hauteur totale */
+}
+
+#buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    /*définit que l'élément occupe 90% de la largeur de son conteneur parent. Ainsi, il occupe la moitié de la largeur disponible.*/
+    display: grid;
+    /*définit que l'élément doit être affiché en tant que grille, permettant de positionner ses enfants dans des cellules de la grille.*/
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /*doit remplir autant de colonnes que possible avec une largeur minimale de 200 pixels (minmax(200px, 1fr))*/
+    /* Rapproche les cartes horizontalement */
+    grid-gap: 10px;
+    /* Espace entre les cartes */
+    max-width: 1000px;
+    /* Largeur maximale du conteneur */
+    padding: 1rem;
+}
+
+.pokemon {
+    border: 1px solid rgb(8, 8, 35);
+    padding: 25px;
+    border-radius: 20px;
+    /* Réduit le border-radius */
+    margin: 10px;
+    /* Ajoute une marge entre chaque carte */
+    background-color: rgba(245, 244, 235, 0.971);
+    max-width: 200px;
+    /* Définit la largeur maximale à 200 pixels */
+    cursor: pointer;
+
+}
+
+.pokemon img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+h2 {
+    font-family: "Delius Unicase", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.header {
+    height: 10vh;
+    /* La hauteur de .header sera égale à 10% de la hauteur de la fenêtre d'affichage */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.image {
+    height: 215px;
+    flex-grow: 1;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+
+:root {
+    --color-feu: orange;
+    --color-plante: rgb(17, 173, 17);
+    --color-poison: rgb(189, 60, 189);
+    --color-vol: rgb(197, 189, 189);
+    --color-eau: rgb(59, 187, 219);
+    --color-insecte: rgb(13, 102, 13);
+    --color-normal: rgb(230, 224, 176);
+    --color-électrik: rgb(255, 251, 0);
+    --color-sol: rgb(228, 171, 97);
+    --color-fée: pink;
+    --color-combat: rgb(153, 67, 27);
+    --color-psy: rgb(236, 24, 155);
+    --color-roche: rgb(153, 106, 36);
+    --color-acier: rgb(124, 120, 120);
+    --color-glace: rgb(165, 230, 235);
+    --color-spectre: rgb(112, 16, 112);
+}
+
+/* type of pokemon*/
+
+.feu {
+    background-color: var(--color-feu);
+    /* border-radius: 30px; */
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.plante {
+    background-color: var(--color-plante);
+    /*  border-radius: 30px; */
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poison {
+    background-color: var(--color-poison);
+    /* border-radius: 30px; */
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.vol {
+    background-color: var(--color-vol);
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.eau {
+    background-color: var(--color-eau);
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.insecte {
+    background-color: var(--color-insecte);
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.normal {
+    background-color: var(--color-normal);
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.électrik {
+    background-color: var(--color-électrik);
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sol {
+    background-color: var(--color-sol);
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fée {
+    background-color: var(--color-fée);
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.combat {
+    background-color: var(--color-combat);
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.psy {
+    background-color: var(--color-psy);
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roche {
+    background-color: var(--color-roche);
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.acier {
+    background-color: var(--color-acier);
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.glace {
+    background-color: var(--color-glace);
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.spectre {
+    background-color: var(--color-spectre);
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.button-value {
+    border: 2px solid rgba(237, 236, 222, 0.971);
+    padding: 1em 2.2em;
+    border-radius: 1.5em;
+    /* background-color: transparent; */
+    cursor: pointer;
+    margin: 1em 0;
+}
+
+/* Créer une animation / pour le bouton
+lien du site : https://codepen.io/believemy/pen/bGNLwNW */
+@keyframes monAnimation {
+    0% {
+        color: black;
+    }
+
+    10% {
+        color: purple;
+    }
+
+    90% {
+        color: rgb(235, 14, 143);
+    }
+
+    100% {
+        color: rgb(250, 234, 5);
+        transform: scale(1.1);
+    }
+}
+
+@-webkit-keyframes monAnimation {
+    0% {
+        color: black;
+    }
+
+    10% {
+        color: purple;
+    }
+
+    90% {
+        color: rgb(235, 14, 143);
+    }
+
+    100% {
+        color: rgb(250, 234, 5);
+        transform: scale(1.1);
+    }
+}
+
+@-webkit-keyframes scale-in-center {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Utiliser une animation / pour le bouton*/
+button {
+    border-radius: 10px;
+    font-family: "Viga", sans-serif;
+    padding: 15px 30px;
+    border: 0;
+    font-size: 1.5em;
+    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+button:hover {
+    /*   animation: monAnimation 1s infinite alternate; */
+    animation-name: monAnimation;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#types {
+    border-radius: 30px;
+    margin: 1em 0;
+    padding: 1em 0.3em;
+    font-family: "Viga", sans-serif;
+    cursor: pointer;
+    font-size: 1.2em;
+    /* Augmente la taille du texte dans le menu déroulant */
+}
+
+#buttonDataViz,
+#boutonNext {
+    border-radius: 30px;
+    margin: 1em 0;
+    padding: 1em 0.3em;
+    font-family: "Viga", sans-serif;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#chartContainer {
+    width: 500px;
+    height: 500px;
+    border-radius: 30px;
+    margin: 1em 0;
+    padding: 1em 0.3em;
+}
