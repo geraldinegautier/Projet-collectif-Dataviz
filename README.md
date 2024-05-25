@@ -37,5 +37,11 @@ https://github.com/geraldinegautier/Projet-collectif-Dataviz/assets/158101084/b8
 ![Capture d'écran 2024-05-24 230809](https://github.com/geraldinegautier/Projet-collectif-Dataviz/assets/158101084/e715a54e-d6a4-4424-a6f7-4e6af4743021)
 ![Capture d'écran 2024-05-24 230829](https://github.com/geraldinegautier/Projet-collectif-Dataviz/assets/158101084/9d3f115d-2b04-407e-bcce-453a6e6bb732)
 
+## **Amélioration depuis la présentation collective**
+- Ajout d'un bouton pour arrêter la musique
+- correction du bug pour l'affichage du tableau qui ne s'affichait qu'après rafraichissement de la page
+- responsive : ajout de la modalité
 
+A venir :
+responsive : actuellement 3 images s'affichent par ligne. Le responsive est donc limité. Il faudrait changer le mode d'affichage qui est actuellement prédéfini à un affichage dynamique qui permettrait d'avoir 3 puis 2 puis 1 seule image en fonction de la taille de l'écran
 
